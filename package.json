@@ -9,6 +9,7 @@
   "author": "Men Nas",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^2.2.33"
+    "mongodb": "^2.2.33",
+    "mongoose": "^5.0.17"
   }
 }
