@@ -10,8 +10,6 @@ var app = express ();
 
 //port configuration for local environment/production
 const port = process.env.PORT || 3000 ;
-//port configuration for local db/prod db
-const url = p
 // so can send json data through our post request
 app.use(bodyParser.json());
 
