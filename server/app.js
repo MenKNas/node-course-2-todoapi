@@ -13,6 +13,10 @@ const port = process.env.PORT || 3000 ;
 // so can send json data through our post request
 app.use(bodyParser.json());
 
+
+app.get("/",(req,res)=>{
+    res.send("<h1> Welcome <h1>");
+});
 // POST ROUTE
 app.post("/todos",(req,res)=>{
     var todo = new Todo({
