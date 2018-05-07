@@ -1,3 +1,17 @@
+var env = process.env.NODE_ENV || "development" ;
+console.log(" ======  env  ==========  ");
+console.log(env);
+
+console.log(process.env.DATABASE_URL);
+// if(env==="development"){
+//     process.env.PORT = 3000;
+//     process.env.MONGODB_URI = "mongodb://localhost:27017/TodoApp2";
+// } 
+// else if(env==="test"){
+//     process.env.PORT = 3000;
+//     process.env.MONGODB_URI = "mongodb://localhost:27017/TodoApp2TestDB";
+// }
+
 var express = require("express");
 var bodyParser = require("body-parser");
 const _ = require("lodash");
@@ -10,7 +24,7 @@ const {ObjectID} = require("mongodb");
 var app = express ();
 
 //port configuration for local environment/production
-const port = process.env.PORT || 3000 ;
+const port = process.env.PORT ;
 // so can send json data through our post request
 app.use(bodyParser.json());
 
